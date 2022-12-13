@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root to: "home#index"
+  get "/increment_async", to: "home#increment_async"
+  # post "/increment_async", to: "home#increment_async"
 end
